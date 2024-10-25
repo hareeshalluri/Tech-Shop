@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 // import TopProductsLayout from '../top-products/TopProductsLayout';
 import increment from "../top-products/TopProductsLayout"
 
-
 function Header({count}) {
   
   console.log(count);

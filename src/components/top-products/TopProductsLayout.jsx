@@ -9,6 +9,9 @@
 
     const increment=()=>{
       setCount(count+1);
+
+
+      
     }
     // console.log(count);
 
@@ -19,7 +22,7 @@
           
           <div className='productsImage'>
           <Link to={`/product/${id}`}>
-            <img src={images[0]} alt="imagesss" className='product-image' />
+            <img src={images[0]} alt="imagesss" className='product-image, no-underline' />
             </Link>
           </div>
           
@@ -29,8 +32,8 @@
                 [...Array(rateCount)].map(i => <IoMdStar key={i} />)
               }
             </span>
-            <Link to={`/product/${id}`}>
-            <h5 >{title}</h5>
+            <Link to={`/product/${id}`} className='no-underline'>
+              <h5 className='title-card'>{title}</h5>
             </Link>
             <p >{info}</p>
           <hr />

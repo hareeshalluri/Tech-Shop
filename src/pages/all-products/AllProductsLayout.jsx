@@ -8,7 +8,6 @@ const AllProductsLayout = ({item}) => {
   return (
     <>
       <div className='cards'>
-        
         <div className='productsImage'>
         <Link to={`/product/${item.id}`}>
           <img src={images[0]} alt="imagesss" className='product-image' />
